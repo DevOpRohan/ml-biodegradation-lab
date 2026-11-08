@@ -1,0 +1,32 @@
+{
+  "executed_at_utc": "2026-11-08T13:58:47.606942+00:00",
+  "environment": "local-validation",
+  "os": "Darwin",
+  "python": "3.12.14",
+  "scikit_learn": "1.6.1",
+  "numpy": "2.2.6",
+  "pandas": "2.2.3",
+  "random_seed": 26,
+  "raw_rows": 1055,
+  "duplicates_removed": 3,
+  "feature_count": 41,
+  "train_rows": 841,
+  "test_rows": 211,
+  "train_class_counts": {
+    "0": 558,
+    "1": 283
+  },
+  "test_class_counts": {
+    "0": 140,
+    "1": 71
+  },
+  "source_sha256": "c66ac1a23aba11fb166fd5054fea14ac97b8e4f7e4940ae679dc863d1cc4b3c9",
+  "test_sha256": "334f0c87fd3c64483985cdc4892fac0e4d9972e980aad2c04541d9c56f6329ef",
+  "model_sha256": {
+    "Logistic Regression": "07fd7017f2561c15fcf5780a26576ea0d37c83f08be6f3570d7882f0bb31a434",
+    "Decision Tree": "221b5bb0bb6656677214bef3e5625363699cfdad75338d9131fd4b631b67c914",
+    "KNN": "8cfaa6033d459cb7291a911e796fec99e841cb14f7974bb4714684de5471f6c1",
+    "Naive Bayes": "6cd6767df1272f5b63b555a99b60abf6a11ba04cb4dfc7e33dd134837522a94e",
+    "Support Vector Machine": "3a3265416a1b21ab8b6030715ef2a343beb94eef401c8f08858ed379d144ad9a"
+  }
+}

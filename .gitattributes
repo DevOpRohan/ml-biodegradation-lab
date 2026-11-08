@@ -1,0 +1,2 @@
+# Preserve the exact upstream data bytes and their CRLF line endings.
+data/biodeg.csv -text whitespace=cr-at-eol
