@@ -82,7 +82,7 @@ Training writes all five `.joblib` pipelines, the train/test CSVs, metric/report
 
 ## BITS Virtual Lab reproduction
 
-Keep the Prayogshala portal tab open. Clone the repository inside `~/workspace`, create the environment there, install `requirements.txt`, and run:
+Keep the Prayogshala portal tab open. Download the repository ZIP from GitHub (Code > Download ZIP), extract it as `~/workspace/ml-biodegradation-lab`, create the Python environment, install `requirements.txt`, and run from that project directory. A ZIP download also works on lab images without Git:
 
 ```bash
 python train.py --environment bits-virtual-lab
@@ -90,9 +90,11 @@ python -m unittest -v
 streamlit run app.py --server.address 127.0.0.1
 ```
 
-Keep the project, models and results inside `~/workspace` so they persist across lab sessions. Capture the terminal results or running app on the actual lab desktop for the submission screenshot.
+Keep the project, models and results inside `~/workspace` so they persist across lab sessions. The included models were verified against the SHA-256 hashes from the actual BITS Virtual Lab run on 8 November 2026 (Linux, Python 3.12.7). All five project tests passed in that environment. `results/run_metadata.json` records the run provenance, and `results/lab_execution.txt` contains the terminal metric summary. The submission PDF includes the actual lab execution screenshot.
 
 ## Streamlit app
+
+[Open the live app](https://rohan-biodegradation-lab.streamlit.app/)
 
 The app provides a labelled test CSV uploader, a model selector, six evaluation metrics, a confusion matrix, classification report, ROC comparison, all-model comparison table and downloadable predictions. It initially evaluates the bundled held-out test data, so evaluators can explore without an upload.
 
@@ -116,5 +118,6 @@ results/metrics.csv         Six metrics for all models
 results/classification_reports.json
 results/confusion_matrices.png
 results/run_metadata.json   Execution provenance and checksums
+results/lab_execution.txt   BITS lab terminal metric summary
 .streamlit/config.toml      App theme and upload limit
 ```
